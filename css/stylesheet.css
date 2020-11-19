@@ -27,6 +27,11 @@
   margin: -1px;
 }
 
+.respons{
+  max-width: 100%;
+  height: auto;
+}
+
 ::-moz-selection {
   background: #233d84;
   color: #ffffff;
@@ -62,5 +67,46 @@ a img {
 }
 /* 헤더 디자인 */
 .app-header{
-  background-color: yellowgreen;
+  background-color: #fff;
+  border-bottom: 1px solid #f5f4fb;
+  display: flex;
+  flex-direction: row; /*기본값*/
+  flex-wrap: nowrap; /*기본값*/
+  justify-content: space-between;
+  align-items: stretch;
 }
+/* 브랜드 로고 */
+.brand{
+  margin: 0;
+  line-height: 16px;
+  /* background-color: limegreen; */
+  padding: 2px;
+}
+.brand a{
+  display: block; /* 인라인 요소인 링크 테그가 전체 영역이 다 블록 요소가 됨*/
+  padding: 30px;
+}
+
+/* 버튼 디자인 */
+.app-header .button.is-open-menu
+.app-header .button.close{
+  cursor: pointer;
+}
+/* 메인메뉴 열기 버튼 */
+.is-open-menu{
+  background-color:#fff;
+  padding: 33px 28px;
+  border-style: none;
+}
+
+.is-open-menu .ir{
+  display: inline-block;
+  width: 26px;
+  height: 22px;
+  cursor: pointer;
+  /* background: url(../images/navigation-button.gif) no-repeat center; */
+  background-image: url(../images/navigation-button.gif);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
