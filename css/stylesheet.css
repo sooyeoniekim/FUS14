@@ -163,18 +163,68 @@ a img {
 
 /* 메인콘텐츠 */
 .app-main{
-  background-color: yellow;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: nowrap;
+  /* align-content: flex-start; */
+}
+
+.ediya-menu{
+  margin: 0 auto;
+  width: 525px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+
+}
+.ediya-menu__item{
+  width: 100%;
+  background-color:#f5f5f5;
+}
+.ediya-menu__item:nth-child(n+2){
+  margin-top: 20px;
+}
+
+.ediya-menu a[role="button"]{
+  display: block;
+  text-align: center;
+  padding-bottom: 40px;
+  color: inherit;
+  text-decoration: none;
 }
 .ediya-menu figure{
-
+  margin: 0;
+  
 }
 .ediya-menu img{
+  margin: 0 auto;
   max-width: 100%;
   height: auto;
+  transform: scale(0.8);
+  transition: all 0.35s;
+}
+.ediya-menu a[role="button"]:hover img,
+.ediya-menu a[role="button"]:focus img{
+  transform: scale(1);
 }
 
+/*미디어 쿼리 상황 : 데스크탑 해상도 일때*/
 @media all and (min-width: 768px){
-  
+  .ediya-menu{
+    width: 526px;
+  }
+  .ediya-menu__item{
+    width: 248px;
+  }
+  .ediya-menu__item:nth-child(2){
+    margin-top: 0;
+  }
+
   }
 }
 
