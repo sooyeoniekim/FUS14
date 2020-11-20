@@ -160,3 +160,23 @@ a img {
 .app-navigation a:focus {
   background: #2e437c;
 }
+
+/* 메인콘텐츠 */
+.app-main{
+  background-color: yellow;
+}
+.ediya-menu figure{
+
+}
+.ediya-menu img{
+  max-width: 100%;
+  height: auto;
+}
+
+@media all and (min-width: 768px){
+  
+  }
+}
+
+
+
