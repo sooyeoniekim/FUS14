@@ -1,0 +1,40 @@
+@keyframes opacity-effect{
+    0%{ opacity: 1; } /* keyword : from */
+    100%{ opacity: 0; } /* keyword : to */
+}
+
+.opacity-effect{
+    border: 5px solid blue;
+    display: flex;
+    
+}
+
+.opacity-effect img{
+    width:12.5%;
+    animation-name: opacity-effect;
+    animation-duration: 300ms; /* 0.3초라는 뜻 */
+    animation-fill-mode: forwards;
+    animation-direction: reverse;
+    opacity: 0;
+}
+.img2{
+    animation-delay: 150ms;
+}
+.img3{
+    animation-delay: 300ms;
+}
+.img4{
+    animation-delay: 450ms;
+}
+.img5{
+    animation-delay: 700ms;
+}
+.img6{
+    animation-delay: 850ms;
+}
+.img7{
+    animation-delay: 1000ms;
+}
+.img8{
+    animation-delay: 1150ms;
+}
